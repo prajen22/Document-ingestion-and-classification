@@ -512,8 +512,7 @@ import streamlit as st
 from groq import Groq
 import os
 
-# Initialize Groq client (make sure you set your API key in environment variables)
-groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+
 
 from tinydb import TinyDB
 import json
@@ -739,3 +738,4 @@ elif section == "📊 Admin Dashboard":
         df_display = df[["timestamp", "file_name", "folder", "status", "url"]].copy()
         df_display.columns = ["📅 Timestamp", "📄 File", "📂 Folder", "✅ Status", "🔗 URL"]
         st.dataframe(df_display.sort_values(by="📅 Timestamp", ascending=False), use_container_width=True)
+
