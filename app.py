@@ -52,8 +52,8 @@ st.sidebar.markdown("---")
 
 st.title("📄 AI DocMate – GenAI-Powered Document Workflow")
 
-img1_path = r"C:\\Users\\praje\\OneDrive\\AppData\\Desktop\\project\\JobAI\\gif4.gif"
-img2_path = r"C:\\Users\\praje\\OneDrive\\AppData\\Desktop\\project\\JobAI\\img2.jpg"
+img1_path = r"gif4.gif"
+img2_path = r"img2.jpg"
 background_generator = BackgroundCSSGenerator(img1_path, img2_path)
 page_bg_img = background_generator.generate_background_css()
 st.markdown(page_bg_img, unsafe_allow_html=True)
@@ -738,4 +738,5 @@ elif section == "📊 Admin Dashboard":
         df_display = df[["timestamp", "file_name", "folder", "status", "url"]].copy()
         df_display.columns = ["📅 Timestamp", "📄 File", "📂 Folder", "✅ Status", "🔗 URL"]
         st.dataframe(df_display.sort_values(by="📅 Timestamp", ascending=False), use_container_width=True)
+
 
