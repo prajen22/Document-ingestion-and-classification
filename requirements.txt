@@ -1,0 +1,30 @@
+# Core framework
+streamlit
+
+# PDF processing
+PyMuPDF
+
+# Image handling
+Pillow
+pytesseract
+easyocr
+
+# Cloud storage (ImageKit)
+imagekitio
+
+# Word documents
+python-docx
+
+# Data handling
+pandas
+plotly
+
+# Database
+tinydb
+elasticsearch
+
+# HTTP requests
+requests
+
+# AI / LLM API
+groq
